@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Dark background colour */
+  }
+  
+  .navigation {
+    display: flex; /* Makes navigation items display horizontally */
+    justify-content: space-between; /* Spreads items evenly */
+    align-items: center; /* Aligns vertically in center */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px 20px; /* Adds padding around links */
+  }
+  
+  .navigation li {
+    list-style: none; /* Removes default bullet points */
+    margin: 0 10px; /* Adds space between list items */
+  }
+  
+  .navigation a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark gray text color */
+    font-weight: bold; /* Bold font for links */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .navigation a:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  
+  .navigation a {
+    /* Same styles from previous code */
+    position: relative; /* Needed for underline effect */
+  }
+  
+  .navigation a:after {
+    content: ""; /* Empty content for underline */
+    display: block;
+    width: 0;
+    height: 2px; /* Height of underline */
+    background-color: #007bff; /* Blue color for underline */
+    position: absolute; /* Position underline below text */
+    bottom: 0; /* Align underline at bottom of link */
+    left: 0; /* Start underline at beginning of link */
+    transition: width 0.3s ease-in-out; /* Smooth underline animation */
+  }
+  
+  .navigation a:hover:after {
+    width: 100%; /* Expand underline on hover */
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    width: 100vw; /* 100% viewport width */
+    height: 100vh; /* 100% viewport height */
+    color: #fff; /* White text colour */
+  }
+  
+  .container img {
+    border-radius: 50%; /* Circular image */
+  }
+  
+  .text-content {
+    text-align: center; /* Center text */
+  }
+  
+  h1 {
+    font-size: 3em; /* Large heading */
+    margin-bottom: 0.5em;
+    text-shadow: 0 0 3px #f00, 0 0 5px #00f; /* Add subtle text shadow */
+  }
+  
+  p {
+    font-size: 1em;
+    font-weight: bold; /* Bold text for the paragraph */
+    margin-bottom: 0.5em;
+  }
+  
+  
